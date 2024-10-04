@@ -5,6 +5,7 @@ function Hero(){
         <div className="hero-container">
             <h1>MUSIC IS FOR</h1>
             <h2>EVERYONE</h2>
+            
         </div>
     )
 }
