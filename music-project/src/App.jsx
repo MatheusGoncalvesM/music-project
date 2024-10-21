@@ -1,15 +1,14 @@
-import Navbar from './Navbar.jsx'
-import Hero from './Hero.jsx'
-import ParticlesComponent from './particles.jsx'
+
+import NavHeroParticle from './NavHeroParticle.jsx'
 import Cards from './Cards.jsx'
+import BlogLayer from './BlogLayer.jsx'
 
 function App() {
   return (
     <>
-    <ParticlesComponent />
-    <Navbar />
-    <Hero />
+    <NavHeroParticle />
     <Cards />
+    <BlogLayer />
     </>
   )
 }
