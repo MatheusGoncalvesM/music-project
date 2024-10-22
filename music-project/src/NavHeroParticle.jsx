@@ -8,8 +8,10 @@ function NavHeroParticle() {
     <div style={{ position: 'relative' }}>
       {/* Envolvendo o Navbar e Hero em uma div, garantindo que as partículas só cubram essa área */}
       <div style={{ position: 'relative', zIndex: 1 }}>
-        <Navbar />
-        <Hero />
+        <div className="background">
+          <Navbar />
+          <Hero />
+        </div>
       </div>
       {/* As partículas devem ser limitadas a essa área */}
       <div style={{
