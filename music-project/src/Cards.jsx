@@ -11,7 +11,7 @@ function Cards() {
         <div className="section-container">
             <div className="section-title">
                 <div className="section-line"></div>
-                <h3>Produtos em Destaque</h3>
+                <h3>New Products</h3>
                 <div className="section-line"></div>
             </div>
             <div className="section-layer">

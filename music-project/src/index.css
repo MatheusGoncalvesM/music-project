@@ -283,5 +283,49 @@ nav{
   color: white;
   font-family: 'Montserrat';
   font-weight: 300;
+}
 
+.feat-prod-container{
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.feat-prod-box{
+  height: auto;
+  width: 50vw;
+  padding: 25px 25px 25px 20vw;
+  display: flex;
+  gap: 20px;
+  background-color: #dfdfdf94;
+}
+
+.feat-prod-box-info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.feat-prod-box-info h1{
+  font-family: Montserrat;
+  font-weight: Bold;
+}
+
+.feat-prod-box-info h2{
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #050505;
+}
+
+.feat-prod-box-info p{
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #000000c7;
 }

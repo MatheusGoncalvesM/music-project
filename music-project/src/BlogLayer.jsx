@@ -4,7 +4,7 @@ import './index.css'
 function BlogLayer(){
     return(
         <div className="blog-layer-container">
-            <h1>Posts mais recentes</h1>
+            <h1>Recent Posts</h1>
             <div className="blog-layer-container2">
             <div className="blog-layer-cards-container">
                 <div className="blog-layer-cards-content">
