@@ -289,7 +289,7 @@ nav{
   width: 100%;
   height: auto;
   min-height: 50vh;
-  background-color: #F5F5F5;
+  background-color: white;
   display: flex;
   align-items: center;
   padding: 30px;
@@ -303,7 +303,9 @@ nav{
   padding: 40px 40px 40px 15vw;
   display: flex;
   gap: 20px;
-  background-color: #dfdfdf94;
+  background-color: #F1F1F1;
+  border: 30px double #ffffff; /* Borda dupla */
+  border-radius: 30px;
 }
 
 .feat-prod-box-info{
@@ -346,6 +348,12 @@ nav{
   gap: 30px;
 }
 
+.original-price {
+  text-decoration: line-through;
+  color: #5c5c5c;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
 
 .button-81 {
   background-color: #fff;
