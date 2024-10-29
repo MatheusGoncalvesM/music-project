@@ -383,6 +383,13 @@ nav{
   color: #fff;
 }
 
+.footer-container{
+  width: 100%;
+  height: auto;
+  min-height: 30vh;
+  background-color: black;
+}
+
 @media (min-width: 768px) {
   .button-81 {
     font-size: 1.125rem;
