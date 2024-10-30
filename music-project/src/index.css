@@ -233,20 +233,6 @@ nav{
   color: rgba(255, 255, 255, 0.856);
 }
 
-.blog-layer-container3{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #111111;
-  color: rgba(255, 255, 255, 0.856);
-}
-
 .blog-layer-container h1{
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -255,48 +241,11 @@ nav{
 .blog-layer-container2{
   width: 100%;
   height: auto;
+  min-height: 30vh;
   display: flex;
   justify-content: center;
   position: relative;
-  top: 50;
-  margin-top: 6%;
-  padding-bottom: 30px;
   color: white;
-  background-color: #000000;
-}
-
-.blog-layer-cards-container{
-  height: auto;
-  width: 15vw;
-  background-color: #000000;
-  padding: 20px;
-  margin-top: -2.5%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.blog-layer-cards-content{
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  padding: 15px;
-  justify-content: center;
-  background-color: #111111;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-
-.blog-layer-cards-content h2{
-  color: white;
-  font-family: 'Montserrat';
-}
-
-.blog-layer-cards-content h3{
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: 300;
 }
 
 .feat-prod-container{
@@ -457,7 +406,7 @@ nav{
 }
 
 footer{
-  background-color: #000000;
+  
 }
 .footerContainer{
   width: 100%;
@@ -509,7 +458,7 @@ footer{
   opacity: 1;
 }
 .footerBottom{
-  background-color: #000;
+  background-color: #111;
   padding: 20px;
   text-align: center;
 }
