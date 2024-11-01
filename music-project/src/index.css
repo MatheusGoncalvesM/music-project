@@ -234,6 +234,17 @@ nav{
   color: rgba(255, 255, 255, 0.856);
 }
 
+.square{
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.square:hover{
+  cursor: pointer;
+}
 
 .feat-prod-container{
   width: 100%;
@@ -459,6 +470,7 @@ footer{
   font-weight: 400;
   margin: 0px 5px;
 }
+
 @media (max-width: 700px){
   .footerNav ul{
       flex-direction: column;
