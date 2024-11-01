@@ -1,12 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion'
 import './index.css'
 
 function BlogLayer(){
     return(
         <div className="blog-layer-container">
-            <div className="blog-layer-container2">
-                
-            </div>
+            
         </div>
     )
 }

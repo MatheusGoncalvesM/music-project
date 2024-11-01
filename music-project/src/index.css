@@ -222,6 +222,7 @@ nav{
 .blog-layer-container{
   width: 100%;
   height: auto;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -233,20 +234,6 @@ nav{
   color: rgba(255, 255, 255, 0.856);
 }
 
-.blog-layer-container h1{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-}
-
-.blog-layer-container2{
-  width: 100%;
-  height: auto;
-  min-height: 30vh;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  color: white;
-}
 
 .feat-prod-container{
   width: 100%;
