@@ -224,14 +224,9 @@ nav{
   height: auto;
   min-height: 50vh;
   display: flex;
-  flex-direction: column;
-  padding-top: 50px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #111111;
-  color: rgba(255, 255, 255, 0.856);
+  background-color: #fdfdfd;
 }
 
 .square{
@@ -239,7 +234,7 @@ nav{
   width: 200px;
   background-color: blue;
   border-radius: 15px;
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .square:hover{
@@ -250,7 +245,7 @@ nav{
   width: 100%;
   height: auto;
   min-height: 50vh;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   padding: 30px;
@@ -265,8 +260,8 @@ nav{
   display: flex;
   gap: 20px;
   background-color: #F1F1F1;
-  border: 30px double #ffffff; /* Borda dupla */
-  border-radius: 30px;
+  border: 30px double #000000; 
+  border-radius: 25px;
 }
 
 .feat-prod-box-info{
