@@ -20,24 +20,10 @@
   height: auto;
   margin: 0;
   padding: 0;
-  background-color: #EBE9E1; 
-}
-
-.hero-container h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7em;
-  letter-spacing: 0.1em;
-  cursor: default;
-  font-weight: thin;
-  color: #E43D12;
-}
-
-.hero-container h2{
-  font-family: 'Roboto', sans-serif;
-  font-size: 5em;
-  cursor: default;
-  font-weight: bold;
-  color: #E43D12;
+  background-image: url("./assets/guitar-background3.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .profile{
@@ -114,6 +100,23 @@ nav{
   gap: 2%;
   justify-content: center;
   align-items: center;
+}
+
+.hero-container h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7em;
+  letter-spacing: 0.1em;
+  cursor: default;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero-container h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  cursor: default;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .hero-container h1, .hero-container h2 {
@@ -218,11 +221,17 @@ nav{
 
 .blog-layer-container{
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 50vh;
   display: flex;
+  flex-direction: column;
+  padding-top: 50px;
   justify-content: center;
   align-items: center;
-  background-color: #EBE9E1;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.856);
 }
 
 .square{
@@ -230,7 +239,7 @@ nav{
   width: 200px;
   background-color: blue;
   border-radius: 15px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid white;
 }
 
 .square:hover{
@@ -241,7 +250,7 @@ nav{
   width: 100%;
   height: auto;
   min-height: 50vh;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
   display: flex;
   align-items: center;
   padding: 30px;
@@ -256,8 +265,8 @@ nav{
   display: flex;
   gap: 20px;
   background-color: #F1F1F1;
-  border: 30px double #000000; 
-  border-radius: 25px;
+  border: 30px double #ffffff; /* Borda dupla */
+  border-radius: 30px;
 }
 
 .feat-prod-box-info{
@@ -345,7 +354,7 @@ nav{
   align-items: center;
   flex-direction: column;
   padding: 30px;
-  background-color: rgb(192, 92, 92);
+  background-color: black;
 }
 
 .footer-info{
@@ -394,10 +403,12 @@ nav{
   width: 80%;
 }
 
+footer{
+  
+}
 .footerContainer{
   width: 100%;
   padding: 70px 30px 20px ;
-  background-color: black;
 }
 .socialIcons{
   display: flex;
@@ -445,7 +456,7 @@ nav{
   opacity: 1;
 }
 .footerBottom{
-  background-color: #000000;
+  background-color: #111;
   padding: 20px;
   text-align: center;
 }
