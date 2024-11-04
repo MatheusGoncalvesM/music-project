@@ -23,7 +23,6 @@ function NavHeroParticle() {
         zIndex: 0,
         pointerEvents: 'none' // Evitar que interfira nas interações da página
       }}>
-        <ParticlesComponent />
       </div>
     </div>
   );

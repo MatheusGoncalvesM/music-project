@@ -8,7 +8,6 @@ function App() {
   return (
     <>
     <NavHeroParticle />
-    <Cards />
     <BlogLayer />
     <FeatProd />
     <Footer />

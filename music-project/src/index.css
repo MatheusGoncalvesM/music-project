@@ -20,10 +20,24 @@
   height: auto;
   margin: 0;
   padding: 0;
-  background-image: url("./assets/guitar-background3.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #EBE9E1; 
+}
+
+.hero-container h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7em;
+  letter-spacing: 0.1em;
+  cursor: default;
+  font-weight: thin;
+  color: #E43D12;
+}
+
+.hero-container h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  cursor: default;
+  font-weight: bold;
+  color: #E43D12;
 }
 
 .profile{
@@ -100,23 +114,6 @@ nav{
   gap: 2%;
   justify-content: center;
   align-items: center;
-}
-
-.hero-container h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7em;
-  letter-spacing: 0.1em;
-  cursor: default;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.hero-container h2{
-  font-family: 'Roboto', sans-serif;
-  font-size: 5em;
-  cursor: default;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 .hero-container h1, .hero-container h2 {
@@ -221,12 +218,11 @@ nav{
 
 .blog-layer-container{
   width: 100%;
-  height: auto;
-  min-height: 50vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fdfdfd;
+  background-color: #EBE9E1;
 }
 
 .square{
@@ -349,7 +345,7 @@ nav{
   align-items: center;
   flex-direction: column;
   padding: 30px;
-  background-color: black;
+  background-color: rgb(192, 92, 92);
 }
 
 .footer-info{
@@ -398,12 +394,10 @@ nav{
   width: 80%;
 }
 
-footer{
-  
-}
 .footerContainer{
   width: 100%;
   padding: 70px 30px 20px ;
+  background-color: black;
 }
 .socialIcons{
   display: flex;
@@ -451,7 +445,7 @@ footer{
   opacity: 1;
 }
 .footerBottom{
-  background-color: #111;
+  background-color: #000000;
   padding: 20px;
   text-align: center;
 }
