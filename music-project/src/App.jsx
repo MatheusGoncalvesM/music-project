@@ -7,10 +7,12 @@ import Footer from './Footer.jsx'
 function App() {
   return (
     <>
-    <NavHeroParticle />
-    <BlogLayer />
-    <FeatProd />
-    <Footer />
+    <div className="background-color">
+      <NavHeroParticle />
+      <BlogLayer />
+      <FeatProd />
+      <Footer />
+    </div>
     </>
   )
 }

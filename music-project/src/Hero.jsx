@@ -1,10 +1,18 @@
 import './index.css'
+import guitarmusic from './assets/guitarmusic.png'
 
 function Hero(){
     return(
         <div className="hero-container">
-            <h1>MUSIC IS FOR</h1>
-            <h2>EVERYONE</h2>
+            <img 
+            src={guitarmusic} 
+            height={500} 
+            style={{ objectFit: 'contain', position: 'relative'}} alt="Headset"
+            />
+            <div className="hero-container-title">
+                <h1 style={{ fontWeight: '100' }}>WHERE<br/> WORDS FAIL</h1>
+                <h1 style={{ fontSize: '2.3em', fontWeight: 'bold' }}>MUSIC SPEAKS</h1>  
+            </div>
         </div>
     )
 }

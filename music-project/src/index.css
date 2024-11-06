@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   padding: 0;
@@ -15,15 +16,17 @@
     background-size: cover;
 }
 
+.background-color{
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(to left top, #000428, #031a40, #062a5a, #073b75, #004e92);
+}
+
 .background{
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
-  background-image: url("./assets/guitar-background3.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .profile{
@@ -92,37 +95,27 @@ nav{
   gap: 30px;
   font-family: 'Fira Sans Extra Condensed';
 }
-.hero-container{
+
+.hero-container {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  gap: 2%;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  padding: 20px;
 }
 
-.hero-container h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7em;
-  letter-spacing: 0.1em;
-  cursor: default;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.hero-container h2{
-  font-family: 'Roboto', sans-serif;
-  font-size: 5em;
-  cursor: default;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.hero-container h1, .hero-container h2 {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1.2s ease forwards;
+.hero-container-title{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: libre franklin;
+  color: #ffdf2b;
+  font-size: 2.5em;
+  padding-bottom: 10vh;
+  text-align: left;
 }
 
 @keyframes fadeInUp {
@@ -130,93 +123,6 @@ nav{
       opacity: 1;
       transform: translateY(0);
   }
-}
-
-.particles-container {
-  position: relative;
-  width: 100%;
-  height: calc(60vh + 40px);
-}
-.particles-container > #tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.section-container{
-  background-color: #F5F5F5;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  align-items: center;
-  min-height: 50vh;
-  width: 100%;
-}
-
-.section-title{
-  display: flex;
-  width: 100%;
-  color: rgb(0, 0, 0);
-  padding: 10vh 0px 0px 0px;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
-}
-
-.section-line {
-  border-radius: 35px;
-  background-color: rgb(0, 0, 0);
-  height: 4px;
-  width: 50%;
-}
-
-.section-layer{
-  width: 100%;
-  height: auto;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 2%;
-}
-
-.section-layer-cards{
-  height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 20vw;
-  border: 2.5px solid black;
-  box-shadow: 300px;
-  background-color: #ebebeb;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  border-radius: 12px;
-  padding: 25px;
-  min-height: 50vh;
-}
-
-.section-layer-cards:hover {
-  transform: translateY(-10px);
-  cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.section-layer-cards-logo {
-  height: 100px;
-  width: 100px;
-}
-
-.section-layer-cards h2{
-  font-family: 'Fira Sans Extra Condensed';
-  font-weight: 400;
-  font-size: 1.3em;
 }
 
 .blog-layer-container{
@@ -229,8 +135,8 @@ nav{
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: black;
   font-family: 'Montserrat', sans-serif;
-  background-color: #111111;
   color: rgba(255, 255, 255, 0.856);
 }
 
@@ -250,8 +156,8 @@ nav{
   width: 100%;
   height: auto;
   min-height: 50vh;
-  background-color: white;
   display: flex;
+  background-color: black;
   align-items: center;
   padding: 30px;
 }
@@ -354,7 +260,6 @@ nav{
   align-items: center;
   flex-direction: column;
   padding: 30px;
-  background-color: black;
 }
 
 .footer-info{
@@ -417,7 +322,6 @@ footer{
 .socialIcons a{
   text-decoration: none;
   padding:  10px;
-  background-color: white;
   margin: 10px;
   border-radius: 50%;
 }
@@ -456,7 +360,6 @@ footer{
   opacity: 1;
 }
 .footerBottom{
-  background-color: #111;
   padding: 20px;
   text-align: center;
 }
