@@ -3,7 +3,7 @@ import './index.css'
 
 function Footer(){
     return(
-        <div className="blog-layer-container">
+        <div className="blog-layer-container6">
             <div className="blog-layer-container2">
                 <footer>
                     <div class="footerContainer">

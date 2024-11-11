@@ -136,10 +136,25 @@ nav{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: black;
+  background-color: rgb(240, 240, 240);
   font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.856);
 }
+
+.blog-layer-container6{
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.856);
+}
+
 
 .square{
   height: 200px;
