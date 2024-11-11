@@ -7,7 +7,7 @@ function Hero(){
             <img 
             src={guitarmusic} 
             height={500} 
-            style={{ objectFit: 'contain', position: 'relative', transform: 'rotate(-10deg)'}} alt="Headset"
+            style={{ objectFit: 'contain', position: 'relative', transform: 'rotate(-10deg)'}} alt="Guitar"
             />
             <div className="hero-container-title">
                 <h1 style={{ fontWeight: '100' }}>WHERE<br/> WORDS FAIL</h1>

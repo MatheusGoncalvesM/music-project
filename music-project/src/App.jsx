@@ -1,6 +1,5 @@
 import NavHeroParticle from './NavHeroParticle.jsx'
-import Cards from './Cards.jsx'
-import BlogLayer from './BlogLayer.jsx'
+import Section1 from './Section1.jsx'
 import FeatProd from './FeatProd.jsx'
 import Footer from './Footer.jsx'
 
@@ -9,7 +8,7 @@ function App() {
     <>
     <div className="background-color">
       <NavHeroParticle />
-      <BlogLayer />
+      <Section1 />
       <FeatProd />
       <Footer />
     </div>
