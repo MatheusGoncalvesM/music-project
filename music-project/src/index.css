@@ -126,22 +126,22 @@ nav{
       transform: translateY(0);
   }
 }
-
-.section-container{
+.section-container {
+  position: relative;
   width: 100%;
   height: auto;
   min-height: 50vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden; 
   background-image: url('./assets/texture2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.section-container-text{
+.section-container-text {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -152,7 +152,14 @@ nav{
   background-color: white;
   border: 2px solid black;
   border-radius: 15px;
-  box-shadow: #000000 10px 10px ;
+  box-shadow: #000000 10px 10px;
+}
+
+.animated-image {
+  position: relative;
+  max-width: 40%; 
+  height: auto;
+  z-index: 1; 
 }
 
 .feat-prod-container{
