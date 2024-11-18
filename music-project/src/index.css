@@ -132,14 +132,27 @@ nav{
   height: auto;
   min-height: 50vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
   background-image: url('./assets/texture2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-container-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  height: auto;
+  width: 50%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: #000000 10px 10px ;
 }
 
 .feat-prod-container{
@@ -320,7 +333,7 @@ footer{
   color: black;
   opacity: 0,9;
 }
-/* Hover affect on social media icon */
+
 .socialIcons a:hover{
   background-color: #111;
   transition: 0.5s;
