@@ -3,8 +3,19 @@ import { motion, useInView } from 'framer-motion';
 import './index.css';
 import manwearingphones from './assets/manwearingphones.png';
 import guitarimage2 from './assets/guitarimage2.png';
+import clienticon from './assets/clienticon.png';
+import securityicon from './assets/securityicon.png';
+import moneyicon from './assets/moneyicon.png';
 
-// Componente reutilizável para Texto Animado
+const text1 = `Experience true sound immersion with our high-quality headphones.
+Designed for musicians and audiophiles, our headphones offer exceptional fidelity, capturing every nuance of the music. 
+No matter the genre, our headphones provide a rich and detailed sound experience, allowing you to hear even the subtlest sounds.`;
+
+const text2 = `Discover excellence in every chord with our superior-quality guitars. 
+Built with premium materials and innovative design, our guitars are crafted to deliver flawless performance in any situation. 
+Whether you're just starting your musical journey or are an experienced guitarist, our guitars provide a warm, clear, 
+and powerful sound that adapts to all styles and preferences.`;
+
 function AnimatedText({ text, initialX, isInView, delay }) {
     return (
         <motion.div
@@ -34,8 +45,7 @@ function AnimatedImage({ src, alt, initialX, isInView, delay, style }) {
     );
 }
 
-// Componente reutilizável para Pilar Animado
-function Pillar({ pillarClass, bottomOffset, delay, isInView }) {
+function Pillar({ pillarClass, bottomOffset, delay, isInView, imageSrc }) {
     return (
         <motion.div
             className="pillar-wrapper"
@@ -43,7 +53,13 @@ function Pillar({ pillarClass, bottomOffset, delay, isInView }) {
             animate={isInView ? { y: '0%', opacity: 1 } : {}}
             transition={{ ease: "easeOut", duration: 0.6, delay }}
         >
-            <div className="pillarimages" style={{ bottom: bottomOffset }}></div>
+            <div
+                className="pillarimages"
+                style={{
+                    backgroundImage: `url(${imageSrc})`,
+                    bottom: bottomOffset
+                }}
+            ></div>
             <div className={pillarClass}></div>
         </motion.div>
     );
@@ -53,14 +69,12 @@ function Section1() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.5 });
 
-    const sampleText = `Lorem ipsum dolor sit amet. Id adipisci molestiae ab rerum error et consequatur enim ea recusandae unde et nostrum itaque qui earum consequatur et distinctio officiis.`;
-
     return (
         <>
             <div className="section-container" style={{ alignItems: 'center' }} ref={ref}>
                 <div className="section-container-text">
                     <h3 style={{ fontWeight: 'bold', fontSize: '1.2em', fontFamily: 'libre franklin' }}>
-                        {sampleText}
+                        {text1}
                     </h3>
                 </div>
                 <img src={manwearingphones} alt="Homem Usando Fone de Ouvido" className="animated-image" />
@@ -80,8 +94,15 @@ function Section1() {
                 />
                 <div className="section-container-text">
                     <h3 style={{ fontWeight: 'bold', fontSize: '1.2em', fontFamily: 'libre franklin' }}>
-                        {sampleText}
+                        {text2}
                     </h3>
+                </div>
+            </div>
+
+            <div className="section-container">
+                <div className="hero-container-title" style={{ alignItems: 'center' }}>
+                    <h1 style={{ fontWeight: '100', color: '#043468' }}>QUALITY YOU CAN TRUST</h1>
+                    <h1 style={{ fontSize: '2.3em', color: '#043468',  fontWeight: 'bold' }}>SERVICE YOU DESERVE</h1>  
                 </div>
             </div>
 
@@ -96,9 +117,9 @@ function Section1() {
                 ref={ref}
             >
                 <div className="section-container-pillars">
-                    <Pillar pillarClass="pillars pillars1" bottomOffset="120px" delay={0.2} isInView={isInView} />
-                    <Pillar pillarClass="pillars pillars2" bottomOffset="300px" delay={0.4} isInView={isInView} />
-                    <Pillar pillarClass="pillars pillars3" bottomOffset="120px" delay={0.6} isInView={isInView} />
+                    <Pillar pillarClass="pillars pillars1" bottomOffset="120px" delay={0.2} isInView={isInView} imageSrc={clienticon}/>
+                    <Pillar pillarClass="pillars pillars2" bottomOffset="300px" delay={0.4} isInView={isInView} imageSrc={securityicon} />
+                    <Pillar pillarClass="pillars pillars3" bottomOffset="120px" delay={0.6} isInView={isInView} imageSrc={moneyicon} />
                 </div>
             </div>
         </>

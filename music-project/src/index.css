@@ -192,7 +192,9 @@ nav{
 
 .pillars {
   background-color: white;
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
   box-shadow: #000000 10px 10px;
   border-radius: 12px 12px 0 0;
   width: 100px;
