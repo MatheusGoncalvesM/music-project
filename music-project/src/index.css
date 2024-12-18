@@ -126,14 +126,15 @@ nav{
       transform: translateY(0);
   }
 }
+
 .section-container {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 50vh;
+  padding-bottom: 0px;
+  min-height: 25vh;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   overflow: hidden; 
   background-image: url('./assets/texture2.jpg');
   background-position: center center;
@@ -153,6 +154,70 @@ nav{
   border: 2px solid black;
   border-radius: 15px;
   box-shadow: #000000 10px 10px;
+}
+
+.section-container-pillars{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  align-items: flex-end;
+  height: auto;
+  width: 50%;
+}
+
+.pillar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza a imagem e o pilar */
+  position: relative;
+}
+
+.pillarimages {
+  background-image: url('./assets/defaultavatar.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: -50px; /* Ajuste para que a imagem "toque" o pilar */
+}
+
+.pillars {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: #000000 10px 10px;
+  border-radius: 12px 12px 0 0;
+  width: 100px;
+}
+
+.pillars1{
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: #000000 10px 10px;
+  border-radius: 12px 12px 0px 0px;
+  margin-top: 200px;
+  height: 300px;
+  width: 100px;
+}
+
+.pillars2{
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: #000000 10px 10px;
+  border-radius: 12px 12px 0px 0px;
+  height: 500px;
+  width: 100px;
+}
+
+.pillars3{
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: #000000 10px 10px;
+  border-radius: 12px 12px 0px 0px;
+  height: 300px;
+  margin-top: 200px;
+  width: 100px;
 }
 
 .animated-image {
