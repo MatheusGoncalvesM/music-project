@@ -180,7 +180,14 @@ nav{
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  margin-bottom: -50px; /* Ajuste para que a imagem "toque" o pilar */
+  margin-bottom: 10px; 
+  transition: 0.2s ease-in-out;
+}
+
+.pillarimages:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .pillars {
@@ -189,36 +196,12 @@ nav{
   box-shadow: #000000 10px 10px;
   border-radius: 12px 12px 0 0;
   width: 100px;
+  z-index: 1;
 }
 
-.pillars1{
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: #000000 10px 10px;
-  border-radius: 12px 12px 0px 0px;
-  margin-top: 200px;
-  height: 300px;
-  width: 100px;
-}
-
-.pillars2{
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: #000000 10px 10px;
-  border-radius: 12px 12px 0px 0px;
-  height: 500px;
-  width: 100px;
-}
-
-.pillars3{
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: #000000 10px 10px;
-  border-radius: 12px 12px 0px 0px;
-  height: 300px;
-  margin-top: 200px;
-  width: 100px;
-}
+.pillars1 { height: 300px; }
+.pillars2 { height: 500px; }
+.pillars3 { height: 300px; }
 
 .animated-image {
   position: relative;
