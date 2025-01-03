@@ -131,7 +131,7 @@ nav{
   position: relative;
   width: 100%;
   height: auto;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   min-height: 25vh;
   display: flex;
   justify-content: space-evenly;
@@ -168,7 +168,7 @@ nav{
 .pillar-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza a imagem e o pilar */
+  align-items: center; 
   position: relative;
 }
 
@@ -195,11 +195,18 @@ nav{
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
-  box-shadow: #000000 10px 10px;
+  box-shadow: 10px 0px  black; 
   border-radius: 12px 12px 0 0;
   width: 100px;
   z-index: 1;
 }
+
+.pillars-line{
+  height: 3px;
+  width: 50%;
+  background-color: black;
+}
+
 
 .pillars1 { height: 300px; }
 .pillars2 { height: 500px; }

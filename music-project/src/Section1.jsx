@@ -30,7 +30,7 @@ function AnimatedText({ text, initialX, isInView, delay }) {
         </motion.div>
     );
 }
-
+''
 function AnimatedImage({ src, alt, initialX, isInView, delay, style }) {
     return (
         <motion.img
@@ -49,7 +49,7 @@ function Pillar({ pillarClass, bottomOffset, delay, isInView, imageSrc }) {
     return (
         <motion.div
             className="pillar-wrapper"
-            initial={{ y: '100vh', opacity: 0 }}
+            initial={{ y: '1vh', opacity: 0 }}
             animate={isInView ? { y: '0%', opacity: 1 } : {}}
             transition={{ ease: "easeOut", duration: 0.6, delay }}
         >
@@ -110,7 +110,6 @@ function Section1() {
                 className="section-container"
                 style={{
                     paddingTop: '50px',
-                    gap: '20px',
                     flexDirection: 'column',
                     alignItems: 'center',
                 }}
@@ -120,6 +119,10 @@ function Section1() {
                     <Pillar pillarClass="pillars pillars1" bottomOffset="120px" delay={0.2} isInView={isInView} imageSrc={clienticon}/>
                     <Pillar pillarClass="pillars pillars2" bottomOffset="300px" delay={0.4} isInView={isInView} imageSrc={securityicon} />
                     <Pillar pillarClass="pillars pillars3" bottomOffset="120px" delay={0.6} isInView={isInView} imageSrc={moneyicon} />
+                </div>
+                <div className="pillars-line"></div>
+                <div className="hero-container-title" style={{ alignItems: 'center', paddingBottom: '0px', paddingTop: '25px' }}>
+                    <h1 style={{ fontSize: '2.3em', color: '#043468',  fontWeight: 'bold' }}>GUARANTEED</h1>  
                 </div>
             </div>
         </>
