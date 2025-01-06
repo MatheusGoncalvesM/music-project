@@ -219,34 +219,68 @@ nav{
   z-index: 1; 
 }
 
-.feat-prod-container{
-  width: 100%;
-  height: auto;
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  padding: 30px;
-}
-
-.feat-prod-box{
-  height: auto;
-  min-height: 40vh;
-  border-radius: 5px;
-  width: 50vw;
-  padding: 40px 40px 40px 15vw;
-  display: flex;
-  gap: 20px;
-  background-color: #F1F1F1;
-  border: 30px double #ffffff; 
-  border-radius: 30px;
-}
-
-.feat-prod-box-info{
+.feat-prod-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  padding-top: 75px;
+}
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.section {
+  flex: 0 0 100%;
+  max-width: 100%;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.visible {
+  transform: translateX(0);
+  opacity: 1;
+  position: absolute;
+}
+
+.section.hidden {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.feat-prod-box {
+  min-height: 40vh;
+  width: 60%;
+  display: flex;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 30px double #ffffff; 
+  border-radius: 15px;
+}
+
+.feat-prod-box img {
+  max-width: 40%;
+  object-fit: contain;
+}
+
+.feat-prod-box-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 15px;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 .feat-prod-box-info h1{
@@ -271,6 +305,13 @@ nav{
   font-weight: bold;
   font-family: Montserrat;
   font-size: 2em;
+}
+
+.feat-prod-box-info h1,
+.feat-prod-box-info h2,
+.feat-prod-box-info p,
+.feat-prod-box-info h3 {
+  margin: 0;
 }
 
 .feat-prod-box-info-button-area{
@@ -314,14 +355,6 @@ nav{
 .button-81:hover {
   background-color: #000000;
   color: #fff;
-}
-
-.next-button{
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid black;
-  height: 75px;
-  width: 75px;
 }
 
 footer{
