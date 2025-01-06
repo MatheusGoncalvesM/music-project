@@ -262,18 +262,23 @@ nav{
 }
 
 .feat-prod-box {
-  min-height: 40vh;
   width: 60%;
+  height: 60vh;
   display: flex;
+  gap: 20px;
   padding: 20px;
-  background-color: #f1f1f1;
+  overflow: hidden; 
+  background-image: url('./assets/texture2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
   border: 30px double #ffffff; 
   border-radius: 15px;
 }
 
 .feat-prod-box img {
   max-width: 40%;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .feat-prod-box-info {
