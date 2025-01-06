@@ -237,7 +237,7 @@ nav{
   display: flex;
   gap: 20px;
   background-color: #F1F1F1;
-  border: 30px double #ffffff; /* Borda dupla */
+  border: 30px double #ffffff; 
   border-radius: 30px;
 }
 
@@ -270,7 +270,7 @@ nav{
   color: black;
   font-weight: bold;
   font-family: Montserrat;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .feat-prod-box-info-button-area{
@@ -314,6 +314,14 @@ nav{
 .button-81:hover {
   background-color: #000000;
   color: #fff;
+}
+
+.next-button{
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  height: 75px;
+  width: 75px;
 }
 
 footer{
