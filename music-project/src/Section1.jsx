@@ -121,9 +121,6 @@ function Section1() {
                     <Pillar pillarClass="pillars pillars3" bottomOffset="120px" delay={0.6} isInView={isInView} imageSrc={moneyicon} />
                 </div>
                 <div className="pillars-line"></div>
-                <div className="hero-container-title" style={{ alignItems: 'center', paddingBottom: '0px', paddingTop: '25px' }}>
-                    <h1 style={{ fontSize: '2.3em', color: '#043468',  fontWeight: 'bold' }}>GUARANTEED</h1>  
-                </div>
             </div>
         </>
     );

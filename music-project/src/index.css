@@ -219,6 +219,48 @@ nav{
   z-index: 1; 
 }
 
+.testimonials-container{
+  min-height: 25vh;
+  width: 15%;
+  height: auto;
+  background-color: white;  
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.quotes{
+  font-size: 3em;
+  font-weight: bold;
+  font-family: libre franklin;
+}
+
+.testimonials-description{
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.testimonials-info-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimonials-names{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+}
+
 .feat-prod-container {
   display: flex;
   flex-direction: column;
