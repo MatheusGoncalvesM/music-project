@@ -1,26 +1,27 @@
 import React from 'react';
-import './index.css'
-import search_icon from './assets/search_icon.png'
+import { Link } from 'react-router-dom'; 
+import './index.css';
+import search_icon from './assets/search_icon.png';
 
 function Navbar() {
-    return(
+    return (
         <nav>
-            <a href="/" className="logo"></a>
+            <Link to="/" className="logo"></Link> 
 
             <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>Contact</li>
-                <li>About</li>
+                <li><Link to="/">Home</Link></li> 
+                <li><Link to="/products">Products</Link></li> 
+                <li><Link to="/contact">Contact</Link></li> 
+                <li><Link to="/about">About</Link></li>
             </ul>
 
             <div className="search-box">
-                <input type="text" placeholder="Search"/>
-                <img src={search_icon} alt="Search"></img>
+                <input type="text" placeholder="Search" />
+                <img src={search_icon} alt="Search" />
             </div>
-            <a href="/" className="profile"></a>
+            <Link to="/" className="profile"></Link>
         </nav>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
