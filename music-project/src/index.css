@@ -9,15 +9,6 @@
   box-sizing: border-box;
 }
 
-
-.logo{
-    width: 36vh;
-    height: 10vh;
-    cursor: pointer;
-    background-image: url('./assets/logo3.png');
-    background-size: cover;
-}
-
 .background-color{
   height: auto;
   width: 100%;
@@ -31,11 +22,11 @@
   padding: 0;
 }
 
-.profile{
-  width: 40px;
+.logo {
+  width: 36vh;
+  height: 10vh;
   cursor: pointer;
-  height: 40px;
-  background-image: url('./assets/profile-icon.jpg');
+  background-image: url('./assets/logo3.png');
   background-size: cover;
 }
 
@@ -44,13 +35,13 @@ nav ul li a {
   text-decoration: none; 
 }
 
-
-ul{
-  flex: 1;
+ul {
   list-style: none;
   text-align: center;
+  margin-left: auto;  /* Isso vai mover os itens para a direita */
 }
-ul li{
+
+ul li {
   display: inline-block;
   margin: 10px 20px;
   text-decoration: none;
@@ -61,48 +52,16 @@ ul li{
   cursor: pointer;
 }
 
-ul li:hover{
+ul li:hover {
   color: #FFFFFF;
   transition: .2s ease-in-out;
 }
 
-.search-box{
+nav {
   display: flex;
-  align-items: center;
-  background: #f7f7f7;
-  padding: 10px 20px;
-  border-radius: 50px;
-}
-
-.search-box input{
-  padding: 6px;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  font-family: 'Fira Sans Extra Condensed';
-  color: #050505;
-  font-size: 18px;
-  max-width: 200px;
-}
-
-.search-box input::placeholder{
-  color: #050505;
-}
-
-.search-box img{
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   height: auto;
   padding: 40px;
-  gap: 30px;
   font-family: 'Fira Sans Extra Condensed';
 }
 
@@ -420,7 +379,7 @@ nav{
   color: #fff;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -433,7 +392,12 @@ footer{
   padding: 100px;
 }
 
-.footer-nav a{
+.footer-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-nav a {
   outline: none;
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -442,11 +406,15 @@ footer{
   font-size: 1em;
 }
 
+.footer-nav a:hover {
+  text-decoration: underline;  
+}
 
-.copyright{
+.copyright {
   color: rgb(0, 0, 0);
-  font-family: montserrat;
-  font-weight: bold;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 0.9em;
 }
 
 .designer{
@@ -455,6 +423,26 @@ footer{
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 5px;
+}
+
+.products-grid{
+  height: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.products-container{
+  width: 20%;
+  height: 250px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: #000000 20px;
+  border: 2px solid black;
 }
 
 @media (max-width: 700px){

@@ -8,24 +8,21 @@ function ProductsHero() {
     const controlsText = useAnimation();
     const controlsHeadset = useAnimation();
     const controlsColor = useAnimation();
-    const controlsTextSecond = useAnimation();  // Controle para o "EVERY WEEK"
+    const controlsTextSecond = useAnimation();  
 
     useEffect(() => {
-        // Animações de movimento e fade das imagens
         controlsHeadset.start({ right: '10%', opacity: 1, transition: { duration: 0.7 } });
         controlsColor.start({ right: '10%', opacity: 1, transition: { duration: 0.7 } });
 
-        // Animação inicial do texto
         controlsText.start({ x: '-400px', opacity: 1, transition: { duration: 0.7 } });
 
-        // Animação para o "EVERY WEEK", que começa invisível
         setTimeout(() => {
             controlsTextSecond.start({ 
                 opacity: 1, 
-                y: '1px',  // Vem de baixo
+                y: '1px',  
                 transition: { duration: 0.7 }
             });
-        }, 700); // Só começa após o final da animação do texto anterior
+        }, 700); 
     }, []);
 
     return (
@@ -38,10 +35,9 @@ function ProductsHero() {
             >
                 <h1 style={{ fontWeight: '100', fontSize: '1.5em' }}>NEW PRODUCTS</h1>
 
-                {/* "EVERY WEEK" que aparece de baixo */}
                 <motion.h1 
                     style={{ fontWeight: 'bold', fontSize: '1.5em' }} 
-                    initial={{ opacity: 0, y: '20px' }}  // Começa invisível e vindo de baixo
+                    initial={{ opacity: 0, y: '20px' }}  
                     animate={controlsTextSecond}
                 >
                     EVERY WEEK

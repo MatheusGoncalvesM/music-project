@@ -1,21 +1,21 @@
-import React from 'react'
-import './index.css'
+import React from 'react';
+import './index.css';
 
-function Footer(){
-    return(
-        <footer>
-          <ul class="footer-nav">
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Termos de uso</a></li>
-            <li><a href="#">Política de privacidade</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Ajuda</a></li>
-          </ul>
-          <div class="copyright">
-            <p>© 2024  Todos os direitos reservados.</p>
-          </div>
-      </footer>
-    )
+function Footer() {
+  return (
+    <footer>
+      <div className="footer-nav">
+        <a href="#">Sobre nós</a>
+        <a href="#">Termos de uso</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">FAQ</a>
+        <a href="#">Ajuda</a>
+      </div>
+      <div className="copyright">
+        <p>© 2024 Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
